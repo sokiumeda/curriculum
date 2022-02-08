@@ -1,10 +1,10 @@
 問1　回答：Switch3
 問2　Switch1
-        F0/1　RP
-        F0/2　BP
-        Switch2
         F0/1　DP
         F0/2　RP
+        Switch2
+        F0/1　RP
+        F0/2　BP
         Switch3
         E0/1　DP
         E0/2　DP
@@ -15,4 +15,6 @@
 ・ルートブリッジのポートは、DPになる為Switch3のポートは全てDP。
 ・Switch1とSwitch4を比べた時に、ルートパスコストが一緒だったのでブリッジIDで比べて
 　Switch4をDPに設定しました。
-・全ての割り振り後に余ったSwitch1のF0/2をBPに設定。
+・Switch2-Switch1-Switch3とSwotch2-Switch4-Switch3のルートパスコストを比べた時に
+　Switch2-Switch1-Switch3の方ルートパスコストが少ないのでSwitch1のF0/2,Switch2のF0/1はRP
+・全て選択をし終えた後の残りのSwitch2のF0/2がBP
